@@ -32,6 +32,21 @@
 				controls :false
 			});
 		});
+
+		$(document).ready(function(){
+			var myslider = $('.slider3').bxSlider({
+				mode:'vertical',
+				pager: false,
+				controls:false,
+				auto:true
+			});
+			$('.topBtn').click(function(){
+				myslider.goToPrevSlide();
+			});
+			$('.bottomBtn').click(function(){
+				myslider.goToNextSlide();
+			});	
+		});
 	</script>
 </head>
 <body>
@@ -60,7 +75,7 @@
 						<li><a href="#">학사안내</a></li>
 						<li><a href="#">대학생활</a></li>
 						<li><a href="#">학생지원센터</a></li>
-						<li><img src="../css1/images/menu.png" alt="toggle-menu"></li>
+						<li><img src="./images/menu.png" alt="toggle-menu"></li>
 					</ul>
 				</div>
 			</div>
@@ -182,11 +197,38 @@
 					</div>
 				</div>
 				<div class="sub_notice">
-					<div class="slider3">
-						<div>
-							<div class="title">2016-1학기&nbsp;성적열람&nbsp;및&nbsp;상담신청</div>
-							<div class="subject">성적열람&nbsp;및&nbsp;상담신청은&nbsp;본인이&nbsp;수강한&nbsp;교과목&nbsp;설문조사를&nbsp;모두&nbsp;마친&nbsp;후&nbsp;확인이&nbsp;가능합니다.</div>
-						</div>
+					<div class="sub_slider3">
+						<div class="slider3">
+							<div>
+								<div class="title">
+								2016-1학기&nbsp;성적열람&nbsp;및&nbsp;상담신청
+								</div>
+								<div class="subject">
+								성적열람&nbsp;및&nbsp;상담신청은&nbsp;본인이&nbsp;수강한&nbsp;교과목&nbsp;설문조사를&nbsp;모두&nbsp;마친&nbsp;후&nbsp;확인이&nbsp;가능합니다.
+								</div>
+							</div>
+							<div>
+								<div class="title">
+								2017년&nbsp;수시&nbsp;합격자&nbsp;안내
+								</div>
+								<div class="subject">
+								2017년&nbsp;수시&nbsp;합격자는&nbsp;해당&nbsp;게시판에서&nbsp;확인&nbsp;가능합니다.
+								</div>
+							</div>
+							<div>
+								<div class="title">
+								2017년-1학기&nbsp;수강신청&nbsp;및&nbsp;조회안내
+								</div>
+								<div class="subject">
+								수강신청&nbsp;및&nbsp;수강조회&nbsp;안내는&nbsp;마이페이지에서&nbsp;확인&nbsp;가능합니다.&nbsp;(폐강&nbsp;과목&nbsp;안내는&nbsp;파일&nbsp;확인&nbsp;요망)
+								</div>
+							</div>
+							
+							
+							</div>
+							<div class="topBtn"><img src="./images/topbtn01.jpg" alt="이전버튼"></div>
+							<div class="bottomBtn"><img src="./images/bottombtn.jpg" alt="다음버튼"></div>
+							
 					</div>
 				</div>
 			</div>
@@ -194,7 +236,26 @@
 	</div>
 
 	<div id="footer">
-		
+		<div class="footer_wrap">
+			<div class="footer_menu">
+				<ul class=footer1>
+					<li><a href="#">회사소개</a></li>
+					<li><a href="#">한국대학교</a></li>
+					<li><a href="#">개인정보취급방침</a></li>
+					<li><a href="#">이용정책</a></li>
+					<li><a href="#">입점/제휴문의&nbsp;및&nbsp;광고</a></li>
+					<li><a href="#">이메일&nbsp;무단수집거부</a></li>
+				</ul>
+				<div class="footer_box1">
+				대표자&nbsp;:&nbsp;홍길동&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;주소&nbsp;:&nbsp;서울특별시&nbsp;구로구&nbsp;구로로&nbsp;300(구로동&nbsp;6가)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				사업자등록번호&nbsp;:&nbsp;000-00-00000&nbsp;&nbsp;&nbsp;
+				<br>
+				통신판매업&nbsp;신고번호&nbsp;:&nbsp;제&nbsp;1234-서울&nbsp;구로구-1004호&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;개인정보관리&nbsp;책임자&nbsp;:&nbsp;홍길동<br>
+				고객센처&nbsp;:&nbsp;1234-5678&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FAX&nbsp;:&nbsp;02-1234-5678&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<address style="display: inline-block; font-style: normal;">HANGUKUNIVERSITY@HANGUK.COM</address>
+				</div>
+				<div class="footer_box2"><b>COPYRIGHT&nbsp;(c)&nbsp;HANGUK.&nbsp;ALL&nbsp;RIGHTS&nbsp;RESERVED.</b></div>
+			</div>
+		</div>
 	</div>
 </body>
 </html>
