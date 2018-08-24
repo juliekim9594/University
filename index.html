@@ -16,7 +16,8 @@
 			var myslider = $('.slider1').bxSlider({
 				auto:true,
 				pager:false,
-				controls:false
+				controls:false,
+				autoHover:true
 			});
 			$('.prevBtn').click(function(){
 				myslider.goToPrevSlide();
@@ -29,7 +30,8 @@
 		$(document).ready(function(){
 			var myslider = $('.slider2').bxSlider({
 				auto:true,
-				controls :false
+				controls :false,
+				autoHover:true
 			});
 		});
 
@@ -38,7 +40,8 @@
 				mode:'vertical',
 				pager: false,
 				controls:false,
-				auto:true
+				auto:true,
+				autoHover:true
 			});
 			$('.topBtn').click(function(){
 				myslider.goToPrevSlide();
